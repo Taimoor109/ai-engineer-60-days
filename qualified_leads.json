@@ -1,0 +1,122 @@
+[
+  {
+    "score": 95,
+    "category": "hot_lead",
+    "urgency": "high",
+    "suggested_pipeline_stage": "qualified",
+    "draft_response": "Hi Sarah, thanks for reaching out. A 30-person agency in the home services space is exactly who we work with, and automating GHL onboarding + lead nurture is our sweet spot. Let's jump on a quick call this week to map out your current process and show you what's possible\u2014I have a few time slots open tomorrow and Thursday if either works for you.",
+    "recommended_next_action": "Book discovery call within 24h",
+    "reasoning": "Perfect fit: established agency, clear pain point, defined budget, urgent timeline",
+    "lead_id": 1,
+    "lead_name": "Sarah K",
+    "lead_email": "sarah@brightagency.com"
+  },
+  {
+    "score": 5,
+    "category": "spam",
+    "urgency": "low",
+    "suggested_pipeline_stage": "disqualified",
+    "draft_response": "",
+    "recommended_next_action": "Ignore - likely test submission or spam",
+    "reasoning": "Anonymous contact with test email and no meaningful message indicates spam or test form submission",
+    "lead_id": 2,
+    "lead_name": "Anonymous",
+    "lead_email": "test@test.com"
+  },
+  {
+    "score": 15,
+    "category": "cold_lead",
+    "urgency": "low",
+    "suggested_pipeline_stage": "nurture",
+    "draft_response": "Thanks for reaching out, Mike. Happy to stay in touch as your needs develop. I'll add you to our monthly newsletter with automation insights that might be useful as you plan ahead.",
+    "recommended_next_action": "Add to 6-month nurture sequence with monthly check-ins",
+    "reasoning": "Solo consultant with no timeline, no budget, and vague interest - not ready to buy",
+    "lead_id": 3,
+    "lead_name": "Mike R",
+    "lead_email": "mike@solo-consulting.com"
+  },
+  {
+    "score": 0,
+    "category": "spam",
+    "urgency": "low",
+    "suggested_pipeline_stage": "disqualified",
+    "draft_response": "",
+    "recommended_next_action": "Ignore and mark as spam",
+    "reasoning": "Obvious spam promoting crypto trading system, not a legitimate agency inquiry",
+    "lead_id": 4,
+    "lead_name": "Crypto Bot",
+    "lead_email": "winner@crypto-rich.biz"
+  },
+  {
+    "score": 95,
+    "category": "hot_lead",
+    "urgency": "high",
+    "suggested_pipeline_stage": "qualified",
+    "draft_response": "Hi Jennifer \u2013 thanks for reaching out. A 4+ hour delay on real estate leads is leaving serious money on the table, and this is exactly the kind of workflow we specialize in. I'd love to jump on a call this week to map out an AI-driven solution that gets your response time down to under 60 seconds. What day works best for you?",
+    "recommended_next_action": "Book discovery call within 24 hours",
+    "reasoning": "Large agency (50 staff), already on GHL, specific pain point, defined budget, immediate availability - textbook hot lead",
+    "lead_id": 5,
+    "lead_name": "Jennifer T",
+    "lead_email": "jen@growthlabs.io"
+  },
+  {
+    "score": 5,
+    "category": "wrong_fit",
+    "urgency": "low",
+    "suggested_pipeline_stage": "disqualified",
+    "draft_response": "",
+    "recommended_next_action": "Ignore or send brief redirect to web design services",
+    "reasoning": "Asking for website development which is not a service we offer",
+    "lead_id": 6,
+    "lead_name": "Tom",
+    "lead_email": "tom@gmail.com"
+  },
+  {
+    "score": 75,
+    "category": "warm_lead",
+    "urgency": "high",
+    "suggested_pipeline_stage": "qualified",
+    "draft_response": "Hi Lisa, thanks for reaching out. Systematizing delivery for 80 clients is exactly the kind of challenge we help agencies solve. I'd love to understand more about your current fulfillment bottlenecks and what you've already tried. Are you available for a quick 30-minute call this week?",
+    "recommended_next_action": "Book discovery call within 24-48h to assess fulfillment pain points and automation opportunities",
+    "reasoning": "Established GHL agency with clear pain point and budget, but slightly below ideal staff size (5 vs 10+)",
+    "lead_id": 7,
+    "lead_name": "Lisa H",
+    "lead_email": "lisa@scaledigital.com"
+  },
+  {
+    "score": 0,
+    "category": "spam",
+    "urgency": "low",
+    "suggested_pipeline_stage": "disqualified",
+    "draft_response": "",
+    "recommended_next_action": "Ignore and mark as spam",
+    "reasoning": "This is promotional spam from a newsletter service, not a genuine lead inquiry",
+    "lead_id": 8,
+    "lead_name": "Newsletter",
+    "lead_email": "noreply@newsletter.com"
+  },
+  {
+    "score": 45,
+    "category": "warm_lead",
+    "urgency": "medium",
+    "suggested_pipeline_stage": "nurture",
+    "draft_response": "Hi David, 10DLC registration issues are frustrating\u2014we've helped several agencies navigate those compliance hurdles. While our focus is on building custom automations and AI solutions rather than troubleshooting specific GHL features, I'd be happy to jump on a quick call to understand your broader setup and see if there's a fit.",
+    "recommended_next_action": "Reply with empathy, offer 15-min exploratory call to uncover broader automation needs beyond immediate tech support",
+    "reasoning": "Legitimate agency with urgent technical issue, but inquiry is support-focused rather than strategic automation/AI project",
+    "lead_id": 9,
+    "lead_name": "David P",
+    "lead_email": "david@quickwins.agency"
+  },
+  {
+    "score": 25,
+    "category": "wrong_fit",
+    "urgency": "low",
+    "suggested_pipeline_stage": "disqualified",
+    "draft_response": "",
+    "recommended_next_action": "Politely decline and suggest resources for dental-specific AI solutions",
+    "reasoning": "Dental office, not a marketing agency - outside our target market of agencies with 10+ staff",
+    "lead_id": 10,
+    "lead_name": "Karen M",
+    "lead_email": "karen@premierdental.com"
+  }
+]
