@@ -1,0 +1,151 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "message": "We're a 30-person agency, GHL Pro plan, focused on home services. Need help automating onboarding and lead nurture. Budget 8-12k. Want to start in 2 weeks.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 80,
+      "case_type": "obvious_hot"
+    },
+    {
+      "id": 2,
+      "message": "Just exploring options. Maybe in 6 months we'll need something. No budget yet.",
+      "expected_category": "cold_lead",
+      "expected_score_min": 0,
+      "expected_score_max": 30,
+      "case_type": "obvious_cold"
+    },
+    {
+      "id": 3,
+      "message": "MAKE $10000 PER DAY WITH OUR AUTOMATED TRADING SYSTEM!!! Click NOW!!!",
+      "expected_category": "spam",
+      "expected_score_min": 0,
+      "expected_score_max": 10,
+      "case_type": "obvious_spam"
+    },
+    {
+      "id": 4,
+      "message": "Hi! We're a 50-person agency, GHL Pro plan, serving real estate. Our biggest pain is slow lead follow-up - SMS goes out 4+ hours after submission. Budget 5-10k. Available for a call this week.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 85,
+      "case_type": "obvious_hot"
+    },
+    {
+      "id": 5,
+      "message": "Do you guys do websites? I need a website.",
+      "expected_category": "wrong_fit",
+      "expected_score_max": 30,
+      "case_type": "wrong_service"
+    },
+    {
+      "id": 6,
+      "message": "Hi, can you send me your pricing?",
+      "expected_category": "warm_lead",
+      "expected_score_min": 30,
+      "expected_score_max": 65,
+      "case_type": "ambiguous_minimal_info"
+    },
+    {
+      "id": 7,
+      "message": "We've been operating in GHL for 3 years. 80 clients, 5 staff. Need to systematize our delivery - drowning in fulfillment work. Looking for a technical partner. Budget flexible for the right fit.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 75,
+      "case_type": "hot_no_specific_budget"
+    },
+    {
+      "id": 8,
+      "message": "Get our free guide to digital marketing! Subscribe today!",
+      "expected_category": "spam",
+      "expected_score_max": 10,
+      "case_type": "newsletter_spam"
+    },
+    {
+      "id": 9,
+      "message": "GHL question - having trouble with 10DLC SMS registration. Our campaigns keep getting rejected. Need help asap.",
+      "expected_category": "warm_lead",
+      "expected_score_min": 40,
+      "expected_score_max": 70,
+      "case_type": "narrow_help_request"
+    },
+    {
+      "id": 10,
+      "message": "Our dental office is using GoHighLevel and we want to add AI to handle initial patient inquiries. Where do we start?",
+      "expected_category": "warm_lead",
+      "expected_score_min": 35,
+      "expected_score_max": 65,
+      "case_type": "wrong_segment_real_need"
+    },
+    {
+      "id": 11,
+      "message": "Hey, saw your post on LinkedIn. We run a 15-person agency, mostly real estate. Curious about your AI workflows. We're profitable but haven't invested in automation yet.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 65,
+      "expected_score_max": 70,
+      "case_type": "warm_no_urgency"
+    },
+    {
+      "id": 12,
+      "message": "URGENT: Need GHL expert NOW. Our last person left. 200 client accounts to migrate. Will pay top dollar.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 70,
+      "case_type": "urgent_but_short_term"
+    },
+    {
+      "id": 13,
+      "message": "Hi I'm a solo consultant looking to grow. Heard about GHL. What's the cheapest way to get started?",
+      "expected_category": "wrong_fit",
+      "expected_score_max": 30,
+      "case_type": "wrong_size_low_budget"
+    },
+    {
+      "id": 14,
+      "message": "We do white-label automation for agencies. Wanted to connect and explore partnership opportunities. Maybe refer clients to each other.",
+      "expected_category": "wrong_fit",
+      "expected_score_max": 30,
+      "case_type": "competitor_outreach"
+    },
+    {
+      "id": 15,
+      "message": "Hi Taimoor, found your profile via a mutual connection. We're a 25-person agency in the home services niche. Looking to add AI lead qualification to our GHL workflows. Budget around 6k. When can we chat?",
+      "expected_category": "hot_lead",
+      "expected_score_min": 85,
+      "case_type": "ideal_lead"
+    },
+    {
+      "id": 16,
+      "message": "test",
+      "expected_category": "spam",
+      "expected_score_max": 10,
+      "case_type": "empty_message"
+    },
+    {
+      "id": 17,
+      "message": "We have 40 staff and use GHL daily but I'm not sure if we need AI specifically. Want to understand what's possible before deciding.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 65,
+      "expected_score_max": 75,
+      "case_type": "qualified_but_undecided"
+    },
+    {
+      "id": 18,
+      "message": "Looking to hire a full-time engineer for our agency. Are you available for W2 employment?",
+      "expected_category": "wrong_fit",
+      "expected_score_max": 30,
+      "case_type": "employment_not_services"
+    },
+    {
+      "id": 19,
+      "message": "We tried building this in-house but our team can't get it working. 60-person agency, GHL Agency Pro, urgent. Bring it home for us. 10-15k available.",
+      "expected_category": "hot_lead",
+      "expected_score_min": 85,
+      "case_type": "ideal_lead_failed_diy"
+    },
+    {
+      "id": 20,
+      "message": "Hi, I'm a student studying AI and would love to learn about your work for my project.",
+      "expected_category": "wrong_fit",
+      "expected_score_max": 20,
+      "case_type": "non_buyer"
+    }
+  ]
+}

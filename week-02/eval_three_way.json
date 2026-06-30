@@ -1,0 +1,410 @@
+{
+  "pass_rates": {
+    "v1": 0.85,
+    "v2": 0.85,
+    "v3": 0.85
+  },
+  "winner": "V3",
+  "cases": [
+    {
+      "id": 1,
+      "type": "obvious_hot",
+      "expected": "hot_lead",
+      "v1": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      }
+    },
+    {
+      "id": 2,
+      "type": "obvious_cold",
+      "expected": "cold_lead",
+      "v1": {
+        "category": "cold_lead",
+        "score": 15,
+        "pass": true
+      },
+      "v2": {
+        "category": "cold_lead",
+        "score": 25,
+        "pass": true
+      },
+      "v3": {
+        "category": "cold_lead",
+        "score": 25,
+        "pass": true
+      }
+    },
+    {
+      "id": 3,
+      "type": "obvious_spam",
+      "expected": "spam",
+      "v1": {
+        "category": "spam",
+        "score": 0,
+        "pass": true
+      },
+      "v2": {
+        "category": "spam",
+        "score": 0,
+        "pass": true
+      },
+      "v3": {
+        "category": "spam",
+        "score": 0,
+        "pass": true
+      }
+    },
+    {
+      "id": 4,
+      "type": "obvious_hot",
+      "expected": "hot_lead",
+      "v1": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 92,
+        "pass": true
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      }
+    },
+    {
+      "id": 5,
+      "type": "wrong_service",
+      "expected": "wrong_fit",
+      "v1": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      },
+      "v2": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      },
+      "v3": {
+        "category": "wrong_fit",
+        "score": 10,
+        "pass": true
+      }
+    },
+    {
+      "id": 6,
+      "type": "ambiguous_minimal_info",
+      "expected": "warm_lead",
+      "v1": {
+        "category": "cold_lead",
+        "score": 15,
+        "pass": false
+      },
+      "v2": {
+        "category": "warm_lead",
+        "score": 45,
+        "pass": true
+      },
+      "v3": {
+        "category": "warm_lead",
+        "score": 45,
+        "pass": true
+      }
+    },
+    {
+      "id": 7,
+      "type": "hot_no_specific_budget",
+      "expected": "hot_lead",
+      "v1": {
+        "category": "warm_lead",
+        "score": 65,
+        "pass": false
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 90,
+        "pass": true
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 90,
+        "pass": true
+      }
+    },
+    {
+      "id": 8,
+      "type": "newsletter_spam",
+      "expected": "spam",
+      "v1": {
+        "category": "spam",
+        "score": 5,
+        "pass": true
+      },
+      "v2": {
+        "category": "spam",
+        "score": 5,
+        "pass": true
+      },
+      "v3": {
+        "category": "spam",
+        "score": 5,
+        "pass": true
+      }
+    },
+    {
+      "id": 9,
+      "type": "narrow_help_request",
+      "expected": "warm_lead",
+      "v1": {
+        "category": "warm_lead",
+        "score": 45,
+        "pass": true
+      },
+      "v2": {
+        "category": "warm_lead",
+        "score": 50,
+        "pass": true
+      },
+      "v3": {
+        "category": "warm_lead",
+        "score": 50,
+        "pass": true
+      }
+    },
+    {
+      "id": 10,
+      "type": "wrong_segment_real_need",
+      "expected": "warm_lead",
+      "v1": {
+        "category": "wrong_fit",
+        "score": 25,
+        "pass": false
+      },
+      "v2": {
+        "category": "wrong_fit",
+        "score": 20,
+        "pass": false
+      },
+      "v3": {
+        "category": "wrong_fit",
+        "score": 20,
+        "pass": false
+      }
+    },
+    {
+      "id": 11,
+      "type": "warm_no_urgency",
+      "expected": "warm_lead",
+      "v1": {
+        "category": "warm_lead",
+        "score": 65,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 70,
+        "pass": false
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 70,
+        "pass": false
+      }
+    },
+    {
+      "id": 12,
+      "type": "urgent_but_short_term",
+      "expected": "hot_lead",
+      "v1": {
+        "category": "hot_lead",
+        "score": 85,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 90,
+        "pass": true
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 90,
+        "pass": true
+      }
+    },
+    {
+      "id": 13,
+      "type": "wrong_size_low_budget",
+      "expected": "wrong_fit",
+      "v1": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      },
+      "v2": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      },
+      "v3": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      }
+    },
+    {
+      "id": 14,
+      "type": "competitor_outreach",
+      "expected": "wrong_fit",
+      "v1": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      },
+      "v2": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      },
+      "v3": {
+        "category": "wrong_fit",
+        "score": 15,
+        "pass": true
+      }
+    },
+    {
+      "id": 15,
+      "type": "ideal_lead",
+      "expected": "hot_lead",
+      "v1": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 90,
+        "pass": true
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 90,
+        "pass": true
+      }
+    },
+    {
+      "id": 16,
+      "type": "empty_message",
+      "expected": "spam",
+      "v1": {
+        "category": "spam",
+        "score": 0,
+        "pass": true
+      },
+      "v2": {
+        "category": "spam",
+        "score": 5,
+        "pass": true
+      },
+      "v3": {
+        "category": "spam",
+        "score": 5,
+        "pass": true
+      }
+    },
+    {
+      "id": 17,
+      "type": "qualified_but_undecided",
+      "expected": "warm_lead",
+      "v1": {
+        "category": "warm_lead",
+        "score": 70,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 72,
+        "pass": false
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 72,
+        "pass": false
+      }
+    },
+    {
+      "id": 18,
+      "type": "employment_not_services",
+      "expected": "wrong_fit",
+      "v1": {
+        "category": "wrong_fit",
+        "score": 5,
+        "pass": true
+      },
+      "v2": {
+        "category": "wrong_fit",
+        "score": 10,
+        "pass": true
+      },
+      "v3": {
+        "category": "wrong_fit",
+        "score": 10,
+        "pass": true
+      }
+    },
+    {
+      "id": 19,
+      "type": "ideal_lead_failed_diy",
+      "expected": "hot_lead",
+      "v1": {
+        "category": "hot_lead",
+        "score": 95,
+        "pass": true
+      },
+      "v2": {
+        "category": "hot_lead",
+        "score": 92,
+        "pass": true
+      },
+      "v3": {
+        "category": "hot_lead",
+        "score": 92,
+        "pass": true
+      }
+    },
+    {
+      "id": 20,
+      "type": "non_buyer",
+      "expected": "wrong_fit",
+      "v1": {
+        "category": "wrong_fit",
+        "score": 5,
+        "pass": true
+      },
+      "v2": {
+        "category": "wrong_fit",
+        "score": 5,
+        "pass": true
+      },
+      "v3": {
+        "category": "wrong_fit",
+        "score": 5,
+        "pass": true
+      }
+    }
+  ]
+}

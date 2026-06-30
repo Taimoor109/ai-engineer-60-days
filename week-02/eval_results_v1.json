@@ -1,0 +1,207 @@
+{
+  "pass_rate": 0.85,
+  "total": 20,
+  "passed": 17,
+  "cases": [
+    {
+      "id": 1,
+      "case_type": "obvious_hot",
+      "message": "We're a 30-person agency, GHL Pro plan, focused on home serv",
+      "expected_category": "hot_lead",
+      "actual_category": "hot_lead",
+      "actual_score": 95,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 2,
+      "case_type": "obvious_cold",
+      "message": "Just exploring options. Maybe in 6 months we'll need somethi",
+      "expected_category": "cold_lead",
+      "actual_category": "cold_lead",
+      "actual_score": 15,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 3,
+      "case_type": "obvious_spam",
+      "message": "MAKE $10000 PER DAY WITH OUR AUTOMATED TRADING SYSTEM!!! Cli",
+      "expected_category": "spam",
+      "actual_category": "spam",
+      "actual_score": 0,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 4,
+      "case_type": "obvious_hot",
+      "message": "Hi! We're a 50-person agency, GHL Pro plan, serving real est",
+      "expected_category": "hot_lead",
+      "actual_category": "hot_lead",
+      "actual_score": 95,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 5,
+      "case_type": "wrong_service",
+      "message": "Do you guys do websites? I need a website.",
+      "expected_category": "wrong_fit",
+      "actual_category": "wrong_fit",
+      "actual_score": 15,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 6,
+      "case_type": "ambiguous_minimal_info",
+      "message": "Hi, can you send me your pricing?",
+      "expected_category": "warm_lead",
+      "actual_category": "cold_lead",
+      "actual_score": 15,
+      "passed": false,
+      "failure_reason": "expected warm_lead, got cold_lead; score 15 outside [30, 65]"
+    },
+    {
+      "id": 7,
+      "case_type": "hot_no_specific_budget",
+      "message": "We've been operating in GHL for 3 years. 80 clients, 5 staff",
+      "expected_category": "hot_lead",
+      "actual_category": "warm_lead",
+      "actual_score": 65,
+      "passed": false,
+      "failure_reason": "expected hot_lead, got warm_lead; score 65 outside [75, 100]"
+    },
+    {
+      "id": 8,
+      "case_type": "newsletter_spam",
+      "message": "Get our free guide to digital marketing! Subscribe today!",
+      "expected_category": "spam",
+      "actual_category": "spam",
+      "actual_score": 5,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 9,
+      "case_type": "narrow_help_request",
+      "message": "GHL question - having trouble with 10DLC SMS registration. O",
+      "expected_category": "warm_lead",
+      "actual_category": "warm_lead",
+      "actual_score": 45,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 10,
+      "case_type": "wrong_segment_real_need",
+      "message": "Our dental office is using GoHighLevel and we want to add AI",
+      "expected_category": "warm_lead",
+      "actual_category": "wrong_fit",
+      "actual_score": 25,
+      "passed": false,
+      "failure_reason": "expected warm_lead, got wrong_fit; score 25 outside [35, 65]"
+    },
+    {
+      "id": 11,
+      "case_type": "warm_no_urgency",
+      "message": "Hey, saw your post on LinkedIn. We run a 15-person agency, m",
+      "expected_category": "warm_lead",
+      "actual_category": "warm_lead",
+      "actual_score": 65,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 12,
+      "case_type": "urgent_but_short_term",
+      "message": "URGENT: Need GHL expert NOW. Our last person left. 200 clien",
+      "expected_category": "hot_lead",
+      "actual_category": "hot_lead",
+      "actual_score": 85,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 13,
+      "case_type": "wrong_size_low_budget",
+      "message": "Hi I'm a solo consultant looking to grow. Heard about GHL. W",
+      "expected_category": "wrong_fit",
+      "actual_category": "wrong_fit",
+      "actual_score": 15,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 14,
+      "case_type": "competitor_outreach",
+      "message": "We do white-label automation for agencies. Wanted to connect",
+      "expected_category": "wrong_fit",
+      "actual_category": "wrong_fit",
+      "actual_score": 15,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 15,
+      "case_type": "ideal_lead",
+      "message": "Hi Taimoor, found your profile via a mutual connection. We'r",
+      "expected_category": "hot_lead",
+      "actual_category": "hot_lead",
+      "actual_score": 92,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 16,
+      "case_type": "empty_message",
+      "message": "test",
+      "expected_category": "spam",
+      "actual_category": "spam",
+      "actual_score": 0,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 17,
+      "case_type": "qualified_but_undecided",
+      "message": "We have 40 staff and use GHL daily but I'm not sure if we ne",
+      "expected_category": "warm_lead",
+      "actual_category": "warm_lead",
+      "actual_score": 70,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 18,
+      "case_type": "employment_not_services",
+      "message": "Looking to hire a full-time engineer for our agency. Are you",
+      "expected_category": "wrong_fit",
+      "actual_category": "wrong_fit",
+      "actual_score": 5,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 19,
+      "case_type": "ideal_lead_failed_diy",
+      "message": "We tried building this in-house but our team can't get it wo",
+      "expected_category": "hot_lead",
+      "actual_category": "hot_lead",
+      "actual_score": 95,
+      "passed": true,
+      "failure_reason": "OK"
+    },
+    {
+      "id": 20,
+      "case_type": "non_buyer",
+      "message": "Hi, I'm a student studying AI and would love to learn about ",
+      "expected_category": "wrong_fit",
+      "actual_category": "wrong_fit",
+      "actual_score": 5,
+      "passed": true,
+      "failure_reason": "OK"
+    }
+  ]
+}
